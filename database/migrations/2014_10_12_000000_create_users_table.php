@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            //实现软删除
+            $table->softDeletes();
         });
     }
 
